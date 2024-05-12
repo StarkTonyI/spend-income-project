@@ -1,0 +1,16 @@
+.box-img{
+    justify-content: space-between;
+    display: flex;
+    height: 70px;
+    text-align: center;
+}
+.bar-chart,
+.pie-chart,
+.calendar,
+.expenses,
+.warning,
+.calculate
+{
+    height: 50px;
+    width: 50px;
+}

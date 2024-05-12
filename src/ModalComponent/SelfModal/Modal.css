@@ -1,0 +1,17 @@
+.cardOpen {
+    width: 400px;
+    height: 160px;
+    background-color: #212121;
+    box-shadow: 15px 15px 30px #191919,
+                 -15px -15px 30px #292929;
+            transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 5s,
+            transform cubic-bezier(0.075, 0.82, 0.165, 1) 5s, height 0.8s
+   }
+   
+   .cardOpen:hover {
+    height: 350px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+ 
+   }
+   

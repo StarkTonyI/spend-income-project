@@ -1,0 +1,107 @@
+  .modal-block {
+    position: fixed;
+    top: 34.5%;
+    height: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color:transparent;
+    width: 520px;
+    display: none;
+    left: 50%;
+    background-color:white;
+    z-index: 1001; /* Ensure modal appears above overlay */
+    transform: translate(-50%, -19%);   
+  }
+  .modal-block.expend{  
+    margin-top: 87px;
+    background-color: white;
+    display: block;
+    transition: padding-bottom 5s, margin-top 3s;
+   padding-bottom: 400px;
+  }
+  .buttom-close{
+    color: white;
+    background-color: blue;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .buttom-close-date{
+    color: white;
+    background-color: blue;
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+   margin-top: 10px;
+    border-radius: 20px;
+  }
+  .date{
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .input-data-calendar{
+    margin-top: 30px;
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: darkkhaki;
+  }
+
+  .inputbox {
+    margin-top: 20px;
+    position: relative;
+    width: 330px;
+  }
+  
+  .inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  
+  .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .inputbox input:valid ~span,
+  .inputbox input:focus ~span {
+    color: #5748f2;
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0,75em;
+  }
+  
+  .inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #5748f2;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+  }
+  
+  .inputbox input:valid ~i,
+  .inputbox input:focus ~i {
+    height: 44px;
+  }
+
+  

@@ -1,0 +1,80 @@
+.userIcon{
+  position: static;
+  margin-top: -20px;
+  margin-bottom:50px;
+  width: 300px;
+  height: 300px;
+}
+.tooltip{
+  display: flex;
+  position: absolute;
+  margin-top: -40px;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  transition: visibility 2s, opacity 0.3s ease; 
+}
+.Underline {
+  border-bottom: 1px solid black; /* Adjust the style of the underline as needed */
+}
+.Underline:hover{
+  cursor: pointer;
+}
+
+.userBlock{
+  margin-top: -700px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+flex-direction: column;
+height: 700px;
+width: 500px;
+margin-left: 400px;
+}
+.inputUser{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 30px;
+  background-color:cornflowerblue;
+  height: 50px;
+  width: 400px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient {
+  --size: 250px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(hsl(158, 82, 57, 85%), hsl(252, 82, 57));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    margin-left: -300px;
+  --size: 700px;
+  }
+}
+
+
+
+
+

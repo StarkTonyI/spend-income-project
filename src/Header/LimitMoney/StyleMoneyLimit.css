@@ -1,0 +1,14 @@
+.limit-text{
+    font-size: 30px;
+    font-weight: bold;
+}
+.limit-input{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    background-color:dimgray;
+}
