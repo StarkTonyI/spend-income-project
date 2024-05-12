@@ -1,5 +1,4 @@
 import dayjs from "dayjs";
-import { TotalSummBalanse } from "../../../Sider/SiderComponents/SpendBoxComponent/AllSpendDataFunction/SpendAllFunction"
 import EveryDayWeekMounthSpend from "../../../Data/EveryDaySpendCount";
 import React, { useContext, useEffect, useState } from "react";
 import ButtonContext from "../../../Context/Context";
@@ -18,13 +17,11 @@ const MonthLimit:React.FC<LimitMonth> = ({limitMonth, MapArrayForCountSpend,setI
 
     const [stopingMonth, setStopingMounth] = useState(false)
     const { refresh } = useContext(ButtonContext)
-    let Spending = TotalSummBalanse('').Spend
-    const currentDay = dayjs().date(); 
+    
     const currentMonth = dayjs().format('M')   
     let SpendOneDay = EveryDayWeekMounthSpend().currentInfo.spend
 
-    let SpendEveryDay = localStorage.getItem('EveryDay');
-    let ParseSpendEveryDay = SpendEveryDay ? JSON.parse(SpendEveryDay) : null
+  
 
    
    

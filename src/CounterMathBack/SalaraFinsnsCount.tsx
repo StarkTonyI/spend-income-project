@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { SalaraData, SalaraBox } from "../Data/SalaraData"
 import dayjs from 'dayjs'
 import { SalaraCurrencyIcon } from "../Data/SalaraData"

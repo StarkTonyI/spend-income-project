@@ -93,7 +93,7 @@ return <>
 <div id="modal-block" className="modal-block">
    {makeSecondEntrance && !passingIndicate && <CalendarComponent dateValue={dateValue} clickOkay={showResult} setPassData={setPassData}/>}
    {showResult && !passingIndicate && <ResultSucsses ResultDate={dateValue}/>}
-      <SavingModalComponent passData={passData} indicate={passingIndicate} dateValue={dateValue}/>
+      <SavingModalComponent passData={passData}/>
       <Button onClick={ShowResult}/>
     </div>
   

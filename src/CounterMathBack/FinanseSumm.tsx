@@ -13,13 +13,9 @@ interface SpendBoxProps {
 
  const ForChangeSpendButtom:React.FC<SpendBoxProps> = ({passInfo, value}) =>{
     
-
-  const [summa, setSumma] = useState(0)
     const { setRefresh } = useContext(ButtonContext)
     const { setPassSignal } = useContext(ButtonContext)
 
-
-    
     const [time, setTime] = useState(false);
     
       useEffect(() => {

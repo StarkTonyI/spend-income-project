@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { DatePicker, Flex, Space } from 'antd';
-import type { DatePickerProps, GetProps } from 'antd';
+import { DatePicker, Space } from 'antd';
+import type { DatePickerProps } from 'antd';
 import CalendarModalInfo from './CalendarModal/CalendarModalInfo';
 import SavingCalendar from './CalendarModal/SavingCalendarData.tsx/SavingCalendar';
 
@@ -9,7 +9,7 @@ interface ModalOpen {
   setPassingSignal:React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const { RangePicker } = DatePicker;
+
 
 const DatePickerCalendar: React.FC<ModalOpen> = ({modalOpen, setPassingSignal}) => {
 

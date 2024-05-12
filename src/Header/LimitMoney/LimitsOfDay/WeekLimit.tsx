@@ -1,5 +1,4 @@
 import dayjs from "dayjs";
-import { TotalSummBalanse } from "../../../Sider/SiderComponents/SpendBoxComponent/AllSpendDataFunction/SpendAllFunction"
 import EveryDayWeekMounthSpend from "../../../Data/EveryDaySpendCount";
 import React, { useContext, useEffect, useState } from "react";
 import ButtonContext from "../../../Context/Context";
@@ -14,14 +13,10 @@ interface LimitWeek {
 const WeekLimit:React.FC<LimitWeek> = ({limitWeek, MapArrayForCountSpend, setIsModalNotification}) => {
     const { refresh } = useContext(ButtonContext)
     const [stopingWeek, setStopingWeek] = useState(false);
-    let Spending = TotalSummBalanse('').Spend
     const currentDay = dayjs().date(); 
     const currentMonth = dayjs().format('M');   
     let SpendOneDay = EveryDayWeekMounthSpend().currentInfo.spend
-    let SpendEveryDay = localStorage.getItem('EveryDay');
-    let ParseSpendEveryDay = SpendEveryDay ? JSON.parse(SpendEveryDay) : null
-
-
+    
 
     const localWeek = localStorage.getItem('WeekLimit');
 

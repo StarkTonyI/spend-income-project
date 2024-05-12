@@ -21,7 +21,6 @@ const CartBlock = () => {
     const [value,setValue] = useState('')
     function Cause(item:any){
         setValue(item)
-        let ParsingLocalDate = SavingLocalDate ? JSON.parse(SavingLocalDate) : null
        let FilterAllData = AllDateParametr.filter(val=> val.cause !== item)
         console.log(FilterAllData)
        AllDateParametr = FilterAllData

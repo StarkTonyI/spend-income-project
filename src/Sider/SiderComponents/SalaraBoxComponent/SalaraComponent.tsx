@@ -10,7 +10,7 @@ const SalaraBoxAll:React.FC = () => {
 
     function PassSignal(param:any){
         if(param === false){
-        const RefreshButtom = setTimeout(() => {
+        setTimeout(() => {
             setSalaraParametr(undefined)
         },100);
         }

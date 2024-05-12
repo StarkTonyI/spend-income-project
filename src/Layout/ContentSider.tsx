@@ -3,8 +3,7 @@ const { Content } = Layout
 import ModalFunction from '../ModalComponent/SelfModal/SelfModel';
 import ModalComponent from '../ModalComponent/ModalCompont';
 import { PieFunction } from '../Header/PieChart/PieChart';
-import { useContext, useEffect, useState } from 'react';
-import MonthShiftsRegulate from '../RegulatorShiftsMonths/RegulatorShiftsMonths'
+import { useContext, useState } from 'react';
 import ButtonContext from '../Context/Context';
 import { StatisticWeek } from '../Header/Statistic/StatisticWeek';
 import { StatisticMonth } from '../Header/Statistic/StatisticMonth';

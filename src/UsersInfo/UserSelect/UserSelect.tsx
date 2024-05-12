@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from '../UserStyle/UsersStyle.module.scss';
 interface SelectCurrencyProps {
   value: (value: any) => void; 

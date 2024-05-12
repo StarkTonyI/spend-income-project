@@ -10,7 +10,7 @@ interface AddSpend{
     naming:string | null
 }   
 const AddFinanseFunction:React.FC<AddSpend> = ({passInfo, money, naming}) => {
-    const ParseMyMoney: string | null = localStorage.getItem('data');
+    //const ParseMyMoney: string | null = localStorage.getItem('data');
 
     let TakeLastId:number
 
@@ -23,7 +23,6 @@ const AddFinanseFunction:React.FC<AddSpend> = ({passInfo, money, naming}) => {
         naming ? setRefresh(money) : null      
    SpendData.map((data, index)=>{
     TakeLastId = index + 1
-
 })
 
 SpendData.map((item)=>{

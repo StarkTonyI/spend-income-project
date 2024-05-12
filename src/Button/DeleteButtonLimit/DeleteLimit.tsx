@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 import './DeleteLimit.css'
 type RemoveFunction = (value:any) => void;
    interface DeleteLimit{

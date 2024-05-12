@@ -1,6 +1,6 @@
 import './SelfModal.css'
 //import Calculater from '../../Header/Calculate/Calculate';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import ButtonContext from '../../Context/Context';
 import Calculator from '../../Header/Calculate/Calculate';
 import SpendMoney from '../../Header/SpendMoney/SpendMoney';

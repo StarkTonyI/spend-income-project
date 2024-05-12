@@ -6,7 +6,6 @@ export function WholeAlgoritm(){
 const everyDay = localStorage.getItem('EveryDay')
 const everyDayParse = everyDay ? JSON.parse(everyDay) : null;
 const everyDayParseFilter = everyDayParse ? everyDayParse.filter((item:any)=>item.id > 0) : null;
-const currendDay = dayjs().format('D');
   function MakeDateMoreBetter(){
     let passingMoreThenWeek:any;
     let weekDate = 0;  
