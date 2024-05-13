@@ -16,7 +16,7 @@ const NamingSumm = !isNaN(parseInt(money))
 //console.log(money)
 
 let CorrectIndex = 0;
-SalaraData.map((item,index)=>{
+SalaraData.map((_item,index)=>{
     CorrectIndex = index + 2
 })
 //console.log(CorrectIndex)

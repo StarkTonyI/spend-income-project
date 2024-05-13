@@ -17,12 +17,14 @@ const DatePickerCalendar: React.FC<ModalOpen> = ({modalOpen, setPassingSignal}) 
 
 
   const [dateValue, setDateValue] = useState('');
+ /*
   const onChange = (
     value: DatePickerProps['value'],
     dateString: [string, string] | string,
   ) => {
 ''
   };
+  */
   const onOk = (value: DatePickerProps['value']) => {
     if(value){
     setDateValue(value?.format('DD/MM/YYYY'))
@@ -38,7 +40,7 @@ const DatePickerCalendar: React.FC<ModalOpen> = ({modalOpen, setPassingSignal}) 
   <div style={{display:'flex', justifyContent:'space-between'}}> 
     <div>
 <Space direction="vertical" size={12}>
-  <DatePicker showTime onChange={onChange} onOk={onOk}/>
+  <DatePicker showTime onOk={onOk}/>
 </Space>
   <CalendarModalInfo dateValue={dateValue} passingIndicate={checkValue}
      mainpulateIndicate={setCheckValue}/>

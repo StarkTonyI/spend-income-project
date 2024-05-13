@@ -7,12 +7,10 @@ const everyDay = localStorage.getItem('EveryDay')
 const everyDayParse = everyDay ? JSON.parse(everyDay) : null;
 const everyDayParseFilter = everyDayParse ? everyDayParse.filter((item:any)=>item.id > 0) : null;
   function MakeDateMoreBetter(){
-    let passingMoreThenWeek:any;
     let weekDate = 0;  
   const DateAlgorithm = everyDayParseFilter ? everyDayParseFilter.filter((item:any) => item.id % 7 === 0) : null
   DateAlgorithm.length > 0 && DateAlgorithm.map((item:any)=>{
     weekDate = item.id
-    passingMoreThenWeek = item.calendarDay
   }) 
   let WeekArray = everyDayParseFilter.filter((item:any)=> item.id >= weekDate)
   let WeekArrayLength = WeekArray.length     

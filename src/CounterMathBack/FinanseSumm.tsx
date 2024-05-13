@@ -33,12 +33,11 @@ interface SpendBoxProps {
               FilterValue ?  setRefresh(value) : null
               
               if(passInfo !== undefined){
-              const ParseMyMoney: string | null = localStorage.getItem('data');
               const ID = passInfo ? passInfo.id - 1 : undefined;
              const ClearSumm = value
-             
+             const stringValue: string = String(ClearSumm);
               
-            const FilterClearSumm = parseInt(ClearSumm)
+            const FilterClearSumm = parseInt(stringValue)
             
             if(ID !== undefined && ClearSumm !== null){    
                 SpendData[ID].summ += FilterClearSumm
