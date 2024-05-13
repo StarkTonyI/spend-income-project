@@ -85,7 +85,7 @@ const UserInfo = () => {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      changePage ? history('https://starktonyi.github.io/spending-income/') : null;
+      changePage ? history('/spending-income/') : null;
     }, 1000);
     return () => clearTimeout(timeout);
   }, [changePage]);
