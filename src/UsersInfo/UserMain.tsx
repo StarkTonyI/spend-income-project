@@ -87,7 +87,7 @@ const UserInfo = () => {
     // Example: Conditionally navigate after a certain time delay
     const timeout = setTimeout(() => {
       // Navigate to another page after 3 seconds
-      changePage ? history('/spending-income') : null;
+      changePage ? history('/spend-income-project/spending-income') : null;
     }, 1000);
 
     // Cleanup: Clear the timeout if the component unmounts before navigation

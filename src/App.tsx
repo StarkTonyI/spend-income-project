@@ -6,8 +6,8 @@ function App() {
   
   return( 
     <Routes>
-      <Route path='/' element={<UserInfo/>}></Route>
-    <Route path='/spending-income' element={<AllLayout/>}></Route>
+      <Route path='/spend-income-project/' element={<UserInfo/>}></Route>
+    <Route path='/spend-income-project/spending-income' element={<AllLayout/>}></Route>
   </Routes>
   )
 }
