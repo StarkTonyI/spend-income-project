@@ -85,7 +85,7 @@ const UserInfo = () => {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      changePage ? history('/spending-income/') : null;
+      changePage ? history('/spend-income-project/main') : null;
     }, 1000);
     return () => clearTimeout(timeout);
   }, [changePage]);
