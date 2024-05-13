@@ -11,7 +11,6 @@ interface SpendBoxProps {
 
 const SpendBox: React.FC<SpendBoxProps> = ({ passInfo, setPassInfo }) => {
   const [open, SetOpen] = useState(false);
-  const [work, setWork] = useState('')
   const [indicate, setIndicate] = useState(false)
  
   async function HandleOK(){

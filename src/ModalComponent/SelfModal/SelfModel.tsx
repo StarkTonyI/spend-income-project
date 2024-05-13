@@ -1,6 +1,6 @@
 import './SelfModal.css'
 //import Calculater from '../../Header/Calculate/Calculate';
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import ButtonContext from '../../Context/Context';
 import Calculator from '../../Header/Calculate/Calculate';
 import SpendMoney from '../../Header/SpendMoney/SpendMoney';
@@ -12,18 +12,10 @@ interface Modal {
 }
 
 const ModalFunction:React.FC<Modal> = ({value, setPassingSignal}) => {
- 
-  const [state, setState] = useState(false);
-
   const { selectedButton, setSelectedButton } = useContext(ButtonContext)
-
-
   const modal: HTMLElement | null = document.getElementById('modal') as HTMLElement | null;
   const overlay: HTMLElement | null = document.getElementById('overlay') as HTMLElement | null;
 
-  if(modal?.style.display === 'block'){
-    setState(true)
-  }
 
   if (modal && overlay){
 

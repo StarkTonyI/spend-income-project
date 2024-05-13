@@ -20,7 +20,6 @@ import  Button  from '../../../Button/ButtonClick/Button';
 
 const CalendarModalInfo:React.FC<DateValue> = ({dateValue, passingIndicate, mainpulateIndicate}) => {
     const [showResult, setShowResult] = useState(false);
-    const [dateTakeInfo, setDateTakeInfo] = useState(false)
    const [makeSecondEntrance,setMakeSecondEntrance] = useState(false)
  
  const modal: HTMLElement | null = document.querySelector('.modal-block') as HTMLElement | null;
@@ -36,7 +35,6 @@ const CalendarModalInfo:React.FC<DateValue> = ({dateValue, passingIndicate, main
           // Initial height and target height
           const initialHeight = modal.offsetHeight;
           const targetHeight = initialHeight + 400; // Increase height by 100px
-          setDateTakeInfo(true) 
           // Interval duration and increment value
           const intervalDuration = 10; // milliseconds
           const increment = 2; // pixels
@@ -67,7 +65,6 @@ const CalendarModalInfo:React.FC<DateValue> = ({dateValue, passingIndicate, main
     const ShowResult = () => {
       if(!passingIndicate){
       setShowResult(true);
-      setDateTakeInfo(false);
       mainpulateIndicate(false)
       showResult ? OffAllDateModal() : null
       }

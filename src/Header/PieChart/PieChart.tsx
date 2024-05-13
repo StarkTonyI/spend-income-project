@@ -1,17 +1,17 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
 import Color, { BorderColor} from '../../Data/Color';
-import React, { useEffect, useMemo } from 'react';
+import { useMemo } from 'react';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
  
 
-interface PieFunction {
-  passIndicate:boolean
-}
+//interface PieFunction {
+  //passIndicate:boolean
+//}
 
 
-export const PieFunction:React.FC<PieFunction> = ({passIndicate}) => {
+export const PieFunction = () => {
 
 
 

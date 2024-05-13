@@ -63,6 +63,7 @@ const UserInfo = () => {
     else(setError(true))
   }
   function DivClick(value:any){
+    console.log(value)
     if(disabled){
       setRemoveAccountSignal(true)
     }

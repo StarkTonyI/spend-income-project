@@ -13,14 +13,12 @@ export default function SpendAllBox(){
 
   const [passInfo, setPassInfo] = useState<SpendItem | undefined>(undefined)
   const { setPassSignal } = useContext(ButtonContext)
-  const { refresh } = useContext(ButtonContext)
+  //const { refresh } = useContext(ButtonContext)
 
 
   const handleButtonClick = (clickedItem: SpendItem) => {
     setPassInfo(clickedItem)
   }
-
-  const [spend, setSpend] = useState(false);  
   const [salara,setSalara] = useState(false)
   const currentDate = dayjs();
 
@@ -30,14 +28,12 @@ export default function SpendAllBox(){
     const filterOddData:SpendItem[] = SpendData.filter((item) => item.id % 2 === 0 ) 
 
     function SpendFunction(){
-          setSpend(true);
           setSalara(false)
       setPassSignal(false)
         }
         function SalaraFunction(){
           setPassSignal(true)
           setSalara(true)
-          setSpend(false)
         }
 
 return(

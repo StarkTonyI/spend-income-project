@@ -1,6 +1,5 @@
 import { Layout } from 'antd'
 import React from 'react';
-import type { SelectProps } from 'antd';
 import SiderSpendComponent from './SiderComponents/SiderComponentSpend';
 
 

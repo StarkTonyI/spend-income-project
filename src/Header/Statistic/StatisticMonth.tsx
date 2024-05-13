@@ -7,8 +7,6 @@ import ButtonContext from '../../Context/Context';
 import MonthShiftsRegulate from '../../RegulatorShiftsMonths/RegulatorShiftsMonths';
 
 function WholeAlgoritmMonth(){
-const everyDay = localStorage.getItem('EveryDay')
-const everyDayParse = everyDay ? JSON.parse(everyDay) : null;
 let weekNow = [];
 let CorrectMonth = -MonthShiftsRegulate().MonthDateBase.length
 

@@ -14,7 +14,7 @@ const AddFinanseFunction:React.FC<AddSpend> = ({passInfo, money, naming}) => {
 
     let TakeLastId:number
 
-   
+   let value;
     const [time, setTime] = useState(false);
     const { setRefresh } = useContext(ButtonContext)
     useEffect(() => {
@@ -22,7 +22,8 @@ const AddFinanseFunction:React.FC<AddSpend> = ({passInfo, money, naming}) => {
             setTime(true);
         naming ? setRefresh(money) : null      
    SpendData.map((data, index)=>{
-    TakeLastId = index + 1
+    value = data;
+    TakeLastId = index + 1;
 })
 
 SpendData.map((item)=>{

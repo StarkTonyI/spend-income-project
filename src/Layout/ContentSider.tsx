@@ -19,7 +19,7 @@ const contentStyle: React.CSSProperties = {
 
   const ContentSider = () => {
     const [nameButton,setNameButton] = useState('')
-    const { passSignal } = useContext(ButtonContext);
+    //const { passSignal } = useContext(ButtonContext);
     const { selectedButton } = useContext(ButtonContext);
     const ChangeStatistic = selectedButton === 'Bar-Chart'
     const [passingSignal, setPassingSignal] = useState(false);
@@ -43,7 +43,7 @@ const contentStyle: React.CSSProperties = {
   {nameButton === 'Month' && <StatisticMonth/>}
   </div>
   }
-  {!ChangeStatistic && <PieFunction passIndicate={passSignal}/>}
+  {!ChangeStatistic && <PieFunction/>}
   <ModalComponent setPassingSignalValue={setPassingSignal}/>
   <ModalFunction value={passingSignal} setPassingSignal={setPassingSignal}/>
 </Content>
