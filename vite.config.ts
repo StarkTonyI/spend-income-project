@@ -5,17 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: "/spend-income-project",
-  server: {
-    hmr: {
-      overlay: false,
-    },
-  },
-  build: {
-    sourcemap: true,
-  },
-  optimizeDeps: {
-    include: ["react", "react-dom"],
-  },
 });
 /*
 export default defineConfig({
