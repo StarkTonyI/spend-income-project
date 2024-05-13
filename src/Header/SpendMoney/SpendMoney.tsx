@@ -23,7 +23,6 @@ const SpendMoney = () => {
         setSignalForSpendMoney(true)
         AllSpendDataFunction(parseInt(display))  
         setDisplay('0')
-
     }
         else {
             // Otherwise, concatenate buttonText with current display value
