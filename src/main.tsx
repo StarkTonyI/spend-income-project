@@ -8,8 +8,8 @@ import  UserInfo  from './UsersInfo/UserMain';
 ReactDOM.createRoot(document.getElementById('root')!).render(
 <Router>
     <Routes>
-      <Route path="/spend-income-project" element={<UserInfo />} />
-      <Route path="/spend-income-project/main" element={<AllLayout />} />
+      <Route path="/" element={<UserInfo />} />
+      <Route path="/spend-income-project" element={<AllLayout />} />
     </Routes>
   </Router>
 )
