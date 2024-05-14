@@ -18,8 +18,8 @@ const UserInfo = () => {
   const [country, setCountry] = useState<string>()
   const [RemoveAccountSignal, setRemoveAccountSignal] = useState(false)
   const [changePage, setChangePage] = useState(false)
-  const history = useNavigate();
-
+  
+  const history = useNavigate()
   const wholeSumm = (event:any) => {
     const newValue = event.target.value.replace(/\D/g, '');
     setSumm(newValue);
